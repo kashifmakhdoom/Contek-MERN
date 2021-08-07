@@ -1,0 +1,28 @@
+{
+  "name": "contek",
+  "version": "1.0.0",
+  "description": "A Contact Manager App",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client":"npm start --prefix client",
+    "execute": "concurrently \"npm run server \" \"npm run client \"",
+    "cinstal": "npm install --prefix client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.3"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "express-validator": "^6.12.1",
+    "nodemon": "^2.0.12"
+  }
+}
